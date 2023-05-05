@@ -36,7 +36,8 @@ const Header: FC = () => {
                     </li>
                 ))}
             </ul>
-            <div className={`${styles.icons} flex items-center justify-content-center cursor-pointer`}>
+            <div
+                className={`${styles.icons} flex items-center justify-content-center cursor-pointer`}>
                 <a className='animated-text2' href="https://github.com/llite22">
                     <FaGithub className={`${styles.icon} ${styles.github} `}/>
                 </a>
