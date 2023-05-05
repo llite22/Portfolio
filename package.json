@@ -1,6 +1,7 @@
 {
   "name": "peter",
   "private": true,
+  "homepage": "https://llite22.github.io/Portfolio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
