@@ -18,6 +18,7 @@ const Router: FC = () => {
                 <Header/>
                 <Routes>
                     <Route element={<Home/>} path='/'/>
+                    <Route element = {<Home/>} path="/Portfolio" >
                     <Route element={<About/>} path='/About'/>
                     <Route element={<TechStack/>} path='/TechStack'/>
                     <Route element={<Projects/>} path='/Projects'/>
