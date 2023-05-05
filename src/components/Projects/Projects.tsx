@@ -48,7 +48,7 @@ const Projects: FC = () => {
                     className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-items-center mt-20 gap-y-8 mb-20'
                 >
                     {
-                        isLoading ? [...new Array(6)].map((_, index) => <Skeleton key={index}/>)
+                        isLoading ? [...new Array(6)].map((_, index: number) => <Skeleton key={index}/>)
                             : items.map((obj) => (
                                 <ProjectCard
                                     key={obj.id}
