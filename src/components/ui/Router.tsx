@@ -13,7 +13,7 @@ import NotFound from "../404.tsx";
 const Router: FC = () => {
 
     return (
-        <BrowserRouter basename="/Portfolio">
+        <BrowserRouter>
             <HelmetProvider>
                 <Header/>
                 <Routes>
