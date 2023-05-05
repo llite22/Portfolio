@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background: #191919;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  color: inherit;
+  background-color: transparent;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  src: url('../fonts/JetBrainsMono-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  src: url('../fonts/JetBrainsMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  src: url('../fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono', monospace;
+  src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+.animated-text {
+  animation: slide-in-left 1s ease-out;
+  display: inline-block;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animated-text2 {
+  animation: slide-in-right 1s ease-out;
+  display: inline-block;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+

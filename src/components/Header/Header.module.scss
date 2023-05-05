@@ -1,0 +1,72 @@
+header {
+  padding-left: 2em;
+  padding-right: 2em;
+
+  h1 {
+    color: #13B0F5;
+    font-weight: 800;
+    font-size: 45px;
+  }
+
+  ul {
+    color: #A7A7A7;
+    font-weight: 500;
+    font-size: 17px;
+
+    li + li {
+      margin-left: 20px;
+    }
+
+    .activeLink {
+      font-size: 20px;
+      color: #13B0F5;
+      outline: none;
+    }
+  }
+
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  a + a {
+    margin-left: 20px;
+  }
+
+  .github {
+    color: #A7A7A7;
+  }
+
+  .telegram {
+    color: #0088cc;
+  }
+
+  @media(max-width: 800px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    ul {
+      li {
+        margin: 0 auto !important;
+      }
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .icons {
+      margin-top: 10px;
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+.contact {
+  h1 {
+    font-weight: 700;
+    font-size: 42px;
+    color: #13B0F5;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @media (max-width: 550px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 415px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+}
