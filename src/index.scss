@@ -68,7 +68,7 @@ button {
 }
 
 .animated-text {
-  animation: slide-in-left 1s ease-out;
+  animation: slide-in-left 1s ease-in-out;
   display: inline-block;
 }
 
@@ -84,7 +84,7 @@ button {
 }
 
 .animated-text2 {
-  animation: slide-in-right 1s ease-out;
+  animation: slide-in-right 1s ease-in-out;
   display: inline-block;
 }
 
