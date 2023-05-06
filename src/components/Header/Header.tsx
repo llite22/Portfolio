@@ -6,7 +6,7 @@ import '../../index.scss'
 
 const Header: FC = () => {
     const [activeLinkIndex, setActiveLinkIndex] = useState(
-        Number(localStorage.getItem('activeLinkIndex')) || 0
+        Number(sessionStorage.getItem('activeLinkIndex')) || 0
     );
     const links = [
         {text: "Главная", path: "/"},
@@ -28,7 +28,7 @@ const Header: FC = () => {
                             className={index === activeLinkIndex ? styles.activeLink : ""}
                             onClick={() => {
                                 setActiveLinkIndex(index);
-                                localStorage.setItem('activeLinkIndex', index.toString());
+                                sessionStorage.setItem('activeLinkIndex', index.toString());
                             }}
                         >
                             {link.text}

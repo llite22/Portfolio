@@ -31,7 +31,7 @@ const TechStack: FC = () => {
                 <link rel="icon" type="image/png" href="/images/cookie.png" sizes="any"/>
             </Helmet>
             <section className={`${styles.techStack} gap-5 mx-auto max-w-screen-xl mt-24 mb-6}`}>
-                <h1 className='animate-bounce'>Мой технический стек</h1>
+                <h1 className='animate-bounce'>Мой технический стэк</h1>
                 <p className='animate-pulse'>Технологии, с которыми я работал в последнее время</p>
                 <div className={`${styles.grid} mt-24}`}>
                     <div
