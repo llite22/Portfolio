@@ -1,13 +1,11 @@
-import {FC, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import {FaGithub, FaTelegram} from "react-icons/fa";
 import styles from './Header.module.scss'
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import '../../index.scss'
 
 const Header: FC = () => {
-    const [activeLinkIndex, setActiveLinkIndex] = useState(
-        Number(sessionStorage.getItem('activeLinkIndex')) || 0
-    );
+    const [activeLinkIndex, setActiveLinkIndex] = useState(0);
     const links = [
         {text: "Главная", path: "/"},
         {text: "Обо мне", path: "/About"},
@@ -15,6 +13,15 @@ const Header: FC = () => {
         {text: "Проекты", path: "/Projects"},
         {text: "Контакт", path: "/Contact"},
     ];
+
+    const location = useLocation();
+
+    useEffect(() => {
+        const index = links.findIndex((link) => link.path === location.pathname);
+        if (index !== -1) {
+            setActiveLinkIndex(index);
+        }
+    }, [location.pathname]);
 
     return (
         <header
@@ -28,7 +35,6 @@ const Header: FC = () => {
                             className={index === activeLinkIndex ? styles.activeLink : ""}
                             onClick={() => {
                                 setActiveLinkIndex(index);
-                                sessionStorage.setItem('activeLinkIndex', index.toString());
                             }}
                         >
                             {link.text}
@@ -36,13 +42,12 @@ const Header: FC = () => {
                     </li>
                 ))}
             </ul>
-            <div
-                className={`${styles.icons} flex items-center justify-content-center cursor-pointer`}>
+            <div className={`${styles.icons} flex items-center justify-content-center cursor-pointer`}>
                 <a className='animated-text2' href="https://github.com/llite22">
-                    <FaGithub className={`${styles.icon} ${styles.github} `}/>
+                    <FaGithub className={`${styles.icon} ${styles.github}`}/>
                 </a>
                 <a className='animated-text2' href="https://t.me/llite22">
-                    <FaTelegram className={`${styles.icon} ${styles.telegram}`}/>
+                    <FaTelegram className={`${styles.icon} ${styles.telegram}}`}/>
                 </a>
             </div>
         </header>
