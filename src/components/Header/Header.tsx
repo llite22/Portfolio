@@ -47,7 +47,7 @@ const Header: FC = () => {
                     <FaGithub className={`${styles.icon} ${styles.github}`}/>
                 </a>
                 <a className='animated-text2' href="https://t.me/llite22">
-                    <FaTelegram className={`${styles.icon} ${styles.telegram}}`}/>
+                    <FaTelegram className={`${styles.icon} ${styles.telegram}`}/>
                 </a>
             </div>
         </header>
