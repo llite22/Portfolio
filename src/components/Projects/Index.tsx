@@ -22,7 +22,7 @@ const Projects: FC = () => {
     async function fetchData() {
       try {
         const { data } = await axios.get<ProjectCardProps[]>(
-          "https://6452a1a7bce0b0a0f74c4316.mockapi.io/items"
+          "https://1e2efbc5266c78e7.mokky.ru/items"
         );
         setItems(data);
         setIsLoading(false);
