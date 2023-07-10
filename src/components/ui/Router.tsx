@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import Home from "../Home";
-import TechStack from "../TechStack";
-import Header from "../Header";
-import Contact from "../Contact";
-import About from "../About";
-import Projects from "../Projects";
+import Home from "../Home/Index";
+import TechStack from "../TechStack/Index";
+import Header from "../Header/Index";
+import Contact from "../Contact/Index";
+import About from "../About/Index";
+import Projects from "../Projects/Index";
 import NotFound from "./404";
 
 const Router: FC = () => {
