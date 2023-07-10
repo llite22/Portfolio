@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import axios from "axios";
-import ProjectCard from "../ui/ProjectCard";
+import ProjectCard from "../ui/ProjectCard/Index";
 import Skeleton from "./Skeleton";
 
 export interface ProjectCardProps {

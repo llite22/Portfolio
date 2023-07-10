@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ProjectCardProps } from "../../Projects";
+import { ProjectCardProps } from "../../Projects/Index";
 import { Link } from "react-router-dom";
 
 const ProjectCard: FC<ProjectCardProps> = ({
