@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Home from "../Home/Index";
@@ -9,7 +8,7 @@ import About from "../About/Index";
 import Projects from "../Projects/Index";
 import NotFound from "./404";
 
-const Router: FC = () => {
+const Router = () => {
   return (
     <BrowserRouter>
       <HelmetProvider>

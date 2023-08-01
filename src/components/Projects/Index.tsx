@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import ProjectCard from "../ui/ProjectCard/Index";
@@ -14,7 +14,7 @@ export interface ProjectCardProps {
   viewCode: string;
 }
 
-const Projects: FC = () => {
+const Projects = () => {
   const [items, setItems] = useState<ProjectCardProps[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 

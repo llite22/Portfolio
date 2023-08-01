@@ -1,9 +1,9 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub, FaTelegram } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { links } from "../../utils/navigationLinks";
 
-const Header: FC = () => {
+const Header = () => {
   const [activeLinkIndex, setActiveLinkIndex] = useState<number>(0);
 
   const location = useLocation();

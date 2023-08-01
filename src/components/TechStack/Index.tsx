@@ -1,8 +1,7 @@
-import { FC } from "react";
 import { Helmet } from "react-helmet-async";
 import { techs } from "../../utils/ImageStack";
 
-const TechStack: FC = () => {
+const TechStack = () => {
   return (
     <>
       <Helmet>

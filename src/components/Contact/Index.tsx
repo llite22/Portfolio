@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { Helmet } from "react-helmet-async";
 
-const Contact: FC = () => {
+const Contact = () => {
   return (
     <>
       <Helmet>

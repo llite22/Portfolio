@@ -1,15 +1,14 @@
-import { FC } from "react";
 import { ProjectCardProps } from "../../Projects/Index";
 import { Link } from "react-router-dom";
 
-const ProjectCard: FC<ProjectCardProps> = ({
+const ProjectCard = ({
   title,
   description,
   stack,
   imageUrl,
   livePreview,
   viewCode,
-}) => {
+}: ProjectCardProps) => {
   const truncatedTitleStackTitle = (str: string): string => {
     if (str.length >= 19) {
       return str.substring(0, 19) + "...";

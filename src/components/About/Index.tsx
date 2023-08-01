@@ -1,8 +1,7 @@
-import { FC } from "react";
 import { ClockLoader } from "react-spinners";
 import { Helmet } from "react-helmet-async";
 
-const About: FC = () => (
+const About = () => (
   <>
     <Helmet>
       <title>Обо мне</title>

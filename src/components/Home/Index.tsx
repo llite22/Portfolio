@@ -1,8 +1,7 @@
-import { FC } from "react";
 import photo from "../../assets/img/peter.jpg";
 import { Helmet } from "react-helmet-async";
 
-const Home: FC = () => {
+const Home = () => {
   return (
     <>
       <Helmet>
