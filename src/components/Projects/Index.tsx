@@ -15,7 +15,7 @@ export interface ProjectCardProps {
 }
 
 const Projects = () => {
-  const [items, setItems] = useState<ProjectCardProps[]>([]);
+  const [items, setItems] = useState<ProjectCardProps[] | []>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
